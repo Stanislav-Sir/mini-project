@@ -1,0 +1,329 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--button-color);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f00af;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+* {
+    user-select: none;
+}
+
+
+.container-fluid {
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1920px;
+    height: 800px;
+    background: #7036BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-header{
+    position: absolute;
+    right: 0;
+
+}
+.navigation{
+    width: 1160px;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 0;
+    position: fixed;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    position: relative;
+    
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2.2px;
+    background: linear-gradient( to right , rgb(255, 255, 255), rgb(162, 0, 255) );
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.header-text {
+    position: relative;
+    bottom: 125px;
+    left: -300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-top: 220px;
+    width: 540px;
+    height: 365px;
+}
+.header-text h1{
+    color: aliceblue;
+    width: 540px;
+    height: 160px;
+    font-weight: 500;
+    font-size: 60px;
+}
+.header-text p{
+    color: aliceblue;
+    width: 540px;
+    height: 60px;
+    font-size: 24px;
+}
+.bth{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 261px;
+    height: 65px;
+    background  :#00BFB4;
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+section{
+    width: 1920px;
+    height: 629px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-text{
+    width: 1140px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.h2 h2{
+    font-size: 50px;
+    text-align: center;
+}
+.img-section {
+    padding: 4px;
+}
+
+/* Override bootstrap column paddings */
+.img-section .row > div {
+    padding: 20px;
+}
+.img-section img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+.accordion{
+    width: 1140px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #7036BA;
+}
+.accordion-item{
+    width: 100%;
+    background: #7036BA;
+    color: white !important;
+    border: none !important;
+}
+.accordion-item:focus{
+    border: none !important;
+}
+.accordion-header{
+    background: #7036BA !important; 
+    color: aliceblue !important;
+}
+.accordion-body{
+    background: #7036BA !important;
+    color: aliceblue !important;
+}
+.accordion-collapse{
+    background: #7036BA !important;
+    color: aliceblue !important;
+}
+.accordion-button {
+    background: #7036BA !important; 
+    color: aliceblue !important;
+}
+.accordion-button::after{
+    background-image: url(arrow.png) !important;
+}
+article{
+    width: 1920px;
+    height: 600px;
+    background: #7036BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.acordion-h1{
+    color: #ffff;
+    font-size: 50px;
+}
+.form-section{
+    margin-top: 100px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}.form {
+    --bg-light: #efefef;
+    --bg-dark: #707070;
+    --clr: #58bc82;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+  }
+  .form-h2{
+    font-size: 50px;
+    text-align: center;
+  }
+  .form-p{
+    font-size: 20px;
+  }
+  .chexbox{
+    position: relative;
+    right: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .chexbox
+  .form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form input[type="phone"],
+  .form input[type="name"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 540px;
+    height: 45px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    outline: 2px solid var(--bg-dark);
+    color: #707070;
+  }
+  
+  .form input[type="phone"]:focus,
+  .form input[type="name"]:focus {
+    outline: 2px solid var(gray);
+  }
+  
+  .label {
+    align-self: flex-start;
+    color: var(gray);
+    font-weight: 600;
+  }
+  
+  .form .submit {
+    width: 261px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: #00BFB4 ;
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 25px ;
+  }
+  .form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+  }
+  
+  .span {
+    position: relative;
+    top: -7px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
